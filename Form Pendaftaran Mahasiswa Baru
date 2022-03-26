@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Form Pendaftaran Mahasisswa Baru</title>
+<body>
+
+    <div style="background-color: white" class="container p-3 my-3 border">
+       <h1 class="text-center"> <p align="center">FORM PENDAFTARAN MAHASISWA BARU </h1> </p>
+        <form id="form" method="POST">
+              <div class="alert alert danger">
+                <div style="background-color:rgb(48, 93, 138);"><strong> Data Diri</strong></style>
+        </div>
+        <div class="row">
+             <div class="col-sm-7">
+                <div class="form-grup">
+                      <label>Nama Lengkap :</label></th>
+                      <br><input type="text" name="nama" class="form-control" placeholder="Masukkan Nama Lengkap"></br>
+                 </div
+                      </div class="col-sm-6">
+                  <label>Nomor Identitas(NIK) : </label>
+                  <br><input type="text" name="nik" class="form-control" id="Nomor Identitas (NIK)" placeholder="Masukkan Nomor NIK">
+       </div>
+   </div>
+   <div class="row">
+    <div class="col-sm-4">
+        <div class="form-group">
+            <label> Tempat Lahir : </label>
+            <br><input type="text" name="tempat_lahir" class="form-control" placeholder="Masukkan Tempat Lahir">
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label>Tanggal Lahir :</label>
+           <br> <input type="date" name="tanggal_lahir" class="form-control" placeholder="Masukkan Tempat Lahir">
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label>Jenis Kelamin</label>
+            <br><select class="form-control" name="jenis kelamin">
+                <option>Pilih</option>
+                <option value="Pria">Pria</option>
+                <option value="Wanita">Wanita</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="form-group"> 
+            <label>Kewarganegaraan :</label>  
+            <br><select class="form-control" name="Kewarganegaraan">
+                <option>Pilih</option>
+                <option value="WNI">Warga Negara Indonesia</option>
+                <option value="WNA">Warga Negara Asing</option>
+            </select>
+    </div>
+</div>
+<div class="col-sm-3">
+    <div class="form-group">
+        <label>Agama : </label>
+       <br> <select class="form-control" name="Agama">
+            <option>Pilih</option>
+            <option value="Islam">Islam</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Protestan">Protestan</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Budha">Budha</option>
+            <option value="Konghucu">Konghucu</option>
+        </select>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="form-group">
+            <label> Nama Ibu Kandung : </label>
+            <br><input type="text" name="Nama_Ibu_Kandung" class="form-control" placeholder="Masukkan Nama Ibu Kandung">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label> E-mail : </label>
+               <br> <input type="text" name="E-mail" class="form-control" placeholder="Masukkan Alamat E-mail">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label> No HP: </label>
+                   <br> <input type="number" name="No HP" class="form-control" placeholder="Masukkan Nomor Handphone">
+                </div>
+            </div>
+        </div>
+       
+        <div class="alert alert-secondary">
+            <div style="background-color:rgb(48, 93, 138);"><strong>Data Alamat Asal</strong></style>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Alamat : </label>
+                   <br> <textarea class="form-control" name="alamat" rows="3" id="alamat"></textarea>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <label>Kode Pos : </label>
+                   <br><input type="number" name="Kode_Pos" class="form-control" placeholder="Kode Pos">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label>Provinsi : </label>
+                   <br> <input type="text" name="Provinsi" class="form-control" placeholder="Masukkan Provinsi">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label>Kabupaten/Kota : </label>
+                    <br><input type="text" name="Kabupaten/Kota" class="form-control" placeholder="Masukkan Kabupaten/Kota">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label>Kecamatan : </label>
+                   <br> <input type="text" name="Kecamatan" class="form-control" placeholder="Masukkan Kecamatan">
+                </div>
+            </div>
+            
+            <div class="alert alert-secondary">
+                <div style="background-color:rgb(48, 93, 138);"><strong>Data Pendidikan </strong></style>
+                
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-group">
+                       <label>Pendidikan Terakhir : </label>
+                        <br><select class="form-control" name="Pendidikan">
+                            <option>Pilih</option>
+                            <option value="SMA-IPA">SMA - IPA</option>
+                            <option value="SMA-IPS">SMA - IPS</option>
+                            <option value="SMK-TKJ">SMK - TKJ</option>
+                            <option value="SMK-Tata Boga">SMK - Tata Boga</option>
+                            <option value="Lainnya">Lainyya/option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label>Asal Sekolah : </label>
+                        <br><input type="text" name="Asal Sekolah" class="form-control" placeholder="Masukkan Asal Sekolah">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label>Rata-rata Nilai Raport Kelas 12 : </label>
+                        <br><input type="text" name="Rata-rata Nilai Raport Kelas 12" class="form-control" placeholder="Masukkan Rata-rata Raport">
+                    </div>
+                </div>
+                
+            <div  class="alert alert secondary"></div>
+            <div style="background-color:rgb(48, 93, 138);"><strong>Pilihan Program Studi</strong></style>
+        </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label>Pilih Program Studi 1 : </label>
+                <br><select class="form-control" name="Pilih Program Studi 1">
+                    <br><option>Pilih</option>
+                    <option value="S1-Teknik Informatika">S1-Teknik Informatika</option>
+                    <option value="S-1 Sistem Informasi">S-1 Sistem Informasi</option>
+                    <option value="S-1 Teknologi Informatika">S-1 Teknologi Informatika</option>
+                </select>
+            </div>
+            <div class="col-sm-3">
+            <div class="form-group">
+                <label>Pilih Program Studi 2 : </label>
+                <br><select class="form-control" name="Pilih Program Studi 2">
+                   <option>Pilih</option>
+                    <option value="S1-Akuntansi">S1-Akuntansi</option>
+                    <option value="S-1 Manajemen">S-1 Manajemen</option>
+                </select>
+                <br><tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp</td>
+                    <td><input type="submit" name="submit" value="Simpan"/>
+                        <input type="reset" name="reset" value="Batal"/></td>
+                </tr></br>
+                </table>
+            </div>
+
+</body>
+</html>
